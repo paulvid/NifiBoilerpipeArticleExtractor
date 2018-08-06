@@ -112,8 +112,8 @@ public class BoilerpipeArticleExtractor extends AbstractProcessor {
         }
 
         try {
-            java.net.URL articleURL = new URL(String.valueOf(context.getProperty(URL_PROPERTY).getValue()));
-
+            java.net.URL articleURL = new URL(String.valueOf(context.getProperty(URL_PROPERTY).evaluateAttributeExpressions(flowFile).getValue()));
+            
             String text = ArticleExtractor.INSTANCE.getText(articleURL);
 
             flowFile = session.write(flowFile, out -> {
@@ -124,7 +124,7 @@ public class BoilerpipeArticleExtractor extends AbstractProcessor {
 
             session.transfer(flowFile, REL_SUCCESS);
         } catch (MalformedURLException mue) {
-            getLogger().error("Failed to get URL {} for {} due to {}", new Object[]{URL_PROPERTY, flowFile, mue});
+            getLogger().error("Failed to get URL {} for {} due to {}", new Object[]{context.getProperty(URL_PROPERTY).evaluateAttributeExpressions(flowFile).getValue(), flowFile, mue});
             session.transfer(flowFile, REL_FAILURE);
             return;
         } catch (BoilerpipeProcessingException bpe) {
