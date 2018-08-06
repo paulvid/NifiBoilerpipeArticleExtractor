@@ -1,0 +1,27 @@
+// ------------------------------------------------------------------
+// Transitive dependencies of this project determined from the
+// maven pom organized by organization.
+// ------------------------------------------------------------------
+
+nifi-BoilerpipeArticleExtractor-processors
+
+
+From: 'an unknown organization'
+  - Boilerpipe (https://github.com/robbypond/boilerpipe) com.robbypond:boilerpipe:jar:1.2.3
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Jericho HTML Parser (http://jericho.htmlparser.net) net.htmlparser.jericho:jericho-html:jar:3.3
+    License: GNU Lesser General Public License (LGPL)  (http://www.gnu.org/licenses/lgpl.txt)    License: Eclipse Public License (EPL)  (http://www.eclipse.org/legal/epl-v10.html)
+  - Neko HTML (http://nekohtml.sourceforge.net/) net.sourceforge.nekohtml:nekohtml:jar:1.9.21
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - Xerces2-j (https://xerces.apache.org/xerces2-j/) xerces:xercesImpl:jar:2.11.0
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)
+  - XML Commons External Components XML APIs (http://xml.apache.org/commons/components/external/) xml-apis:xml-apis:jar:1.4.01
+    License: The Apache Software License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0.txt)    License: The SAX License  (http://www.saxproject.org/copying.html)    License: The W3C License  (http://www.w3.org/TR/2004/REC-DOM-Level-3-Core-20040407/java-binding.zip)
+
+From: 'Apache NiFi Project' (http://nifi.apache.org/)
+  - nifi-utils (http://nifi.apache.org/nifi-commons/nifi-utils) org.apache.nifi:nifi-utils:jar:1.5.0
+    License: Apache License, Version 2.0  (http://www.apache.org/licenses/LICENSE-2.0)
+
+
+
+

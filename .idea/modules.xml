@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/boilerpipe-article-extractor.iml" filepath="$PROJECT_DIR$/boilerpipe-article-extractor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-BoilerpipeArticleExtractor-nar/nifi-BoilerpipeArticleExtractor-nar.iml" filepath="$PROJECT_DIR$/nifi-BoilerpipeArticleExtractor-nar/nifi-BoilerpipeArticleExtractor-nar.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nifi-BoilerpipeArticleExtractor-processors/nifi-BoilerpipeArticleExtractor-processors.iml" filepath="$PROJECT_DIR$/nifi-BoilerpipeArticleExtractor-processors/nifi-BoilerpipeArticleExtractor-processors.iml" />
+    </modules>
+  </component>
+</project>
