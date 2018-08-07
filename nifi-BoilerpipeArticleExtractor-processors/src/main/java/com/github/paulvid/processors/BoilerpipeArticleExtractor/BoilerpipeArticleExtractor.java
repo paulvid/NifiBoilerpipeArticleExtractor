@@ -113,7 +113,7 @@ public class BoilerpipeArticleExtractor extends AbstractProcessor {
 
         try {
             java.net.URL articleURL = new URL(String.valueOf(context.getProperty(URL_PROPERTY).evaluateAttributeExpressions(flowFile).getValue()));
-            
+
             String text = ArticleExtractor.INSTANCE.getText(articleURL);
 
             flowFile = session.write(flowFile, out -> {
